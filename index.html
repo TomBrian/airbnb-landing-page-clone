@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<title>Airbnb:vacation rentals and bla bla</title>
+</head>
+<body>
+<div class="fix-on-scroll-nav fixed-top">
+    <nav class="md-block d-none flex justify-content-center p-3 search-nav light text-white">
+    <div class="nav-search shadow-lg bg-white p-1 flex">
+       <input type="text" placeholder="start your search...">
+       <button class="p-2 search-btn"> <img src="./images/search.svg" alt="search"></button>
+    </div>
+</nav>
+<nav class="md-none p-3 navbar-light text-dark">
+    <div class="container px-5 flex justify-content-between">
+<div class="logo">
+    <img src="./images/logo-dark.svg" alt="logo">
+</div>
+ <div class="nav-search shadow-lg bg-white p-1 flex">
+       <input type="text" placeholder="start your search...">
+       <button class="p-2 search-btn"> <img src="./images/search.svg" alt="search"></button>
+    </div>
+<div class="top-right-section flex">
+   <button class=" trans"><a href="#"  class="nav-link">Become a host</a></button>
+   <button class=" trans" title="Select Language"><a href="#"  class="nav-link"><img src="./images/web-dark.svg" alt="web"></a></button>
+  <div class="dropdown" >
+     <button class="light flex p-2 align-items-center dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown">
+    <img src="./images/menu.svg" alt="menu" class="menu"/>
+    <img src="./images/user.svg" alt="user" width="20" height="20" class="user"/>
+  </button>
+      <div class="dropdown-menu p-2 shadow-lg" aria-labelledby="triggerId">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item disabled" href="#">Disabled action</a>
+          <h6 class="dropdown-header">Section header</h6>
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">After divider action</a>
+      </div>
+  </div>
+</div>
+</div>
+</nav>
+</div>
+<div class="header">
+<nav class="md-block d-none flex justify-content-center p-3 search-nav transparent text-white">
+    <div class="nav-search shadow-lg bg-white p-1 flex">
+       <input type="text" placeholder="start your search...">
+       <button class="p-2 search-btn"> <img src="./images/search.svg" alt="search"></button>
+    </div>
+</nav>
+<nav class="md-none p-3 navbar-transparent text-white">
+    <div class="container px-5 flex justify-content-between">
+<div class="logo">
+    <img src="./images/logo.svg" alt="logo">
+</div>
+<ul class="menu flex justify-content-between">
+<li>
+    <a href="#" class="nav-link">
+    Places to stay
+    </a>
+</li>
+<li>
+     <a href="#" class="nav-link">
+    Experiences
+</a>
+</li>
+<li>
+     <a href="#" class="nav-link">
+    Online Experiences
+    </a>
+</li>
+</ul>
+<div class="top-right-section flex">
+   <button class=" trans"><a href="#"  class="nav-link">Become a host</a></button>
+   <button class=" trans" title="Select Language"><a href="#"  class="nav-link"><img src="./images/web.svg" alt="web"></a></button>
+  <div class="dropdown" >
+     <button class="light flex p-2 align-items-center dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown">
+    <img src="./images/menu.svg" alt="menu" class="menu"/>
+    <img src="./images/user.svg" alt="user" width="20" height="20" class="user"/>
+  </button>
+      <div class="dropdown-menu p-2 shadow-lg" aria-labelledby="triggerId">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item disabled" href="#">Disabled action</a>
+          <h6 class="dropdown-header">Section header</h6>
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">After divider action</a>
+      </div>
+  </div>
+</div>
+</div>
+</nav>
+<div class="search-wrapper md-none my-5 shadow-lg">
+  <form class="search flex">
+     <div class="step px-4 py-2">
+        <small><b>Location</b></small><br>
+        <input type="text" placeholder="Where are you going ?">
+     </div>
+      <div class="step px-4 py-2">
+        <small><b>Add dates</b></small><br>
+        <input type="datetime" placeholder="add dates">
+     </div>
+      <div class="step px-4 py-2">
+        <small><b>Check out dates</b></small><br>
+        <input type="datetime" placeholder="add dates">
+     </div>
+     <div class="step step-search justify-content-between align-items-center flex px-2 py-2">
+         <div class="mx-3">
+        <small><b>Guests</b></small><br>
+        <p class="text-muted">Add guests</p>
+        </div>
+        <div>
+            <button class="search-btn p-3">
+                <img src="./images/search.svg" alt="search">
+            </button>
+        </div>
+     </div>
+    </form>
+  </div>
+  <div class="hero-text">
+      <div class="overlay p-3">
+      <h3 class="text-center">Not sure where to go? Perfect.</h3>
+    </div>
+    <button class="py-3 px-5 my-3 shadow-md hover-grow flexible"><b>I'm flexible</b></button>
+  </div>
+</div>
+<div class="container px-5 nearby-container">
+    <h1 class="my-4">Explore Nearby</h1>
+    <div class="flex nearby-cards">
+        <div class="nearby-card my-2 flex align-items-center">
+           <div class="image rounded-md">
+               <img src="./images/Nairobi.jpg" alt="">
+           </div>
+           <div class="text p-3">
+               <p><span class="font-weight-bold">
+                   Nairobi
+               </span></p>
+               <p class="text-muted">15 minutes drive</p>
+           </div>
+        </div>
+         <div class="nearby-card my-2 flex align-items-center">
+           <div class="image rounded-md">
+               <img src="./images/Mombasa.jpg" alt="">
+           </div>
+           <div class="text p-3">
+               <p><span class="font-weight-bold">
+                   Mombasa
+               </span></p>
+               <p class="text-muted">7 hour drive</p>
+           </div>
+        </div>
+         <div class="nearby-card my-2 flex align-items-center">
+           <div class="image rounded-md">
+               <img src="./images/Diani.jpg" alt="">
+           </div>
+           <div class="text p-3">
+               <p><span class="font-weight-bold">
+                   Diani beach
+               </span></p>
+               <p class="text-muted">7 hour drive</p>
+           </div>
+        </div>
+         <div class="nearby-card my-2 flex align-items-center">
+           <div class="image rounded-md">
+               <img src="./images/Watamu.jpg" alt="">
+           </div>
+           <div class="text p-3">
+               <p><span class="font-weight-bold">
+                   Watamu
+               </span></p>
+               <p class="text-muted">8.5 hour drive</p>
+           </div>
+        </div>
+        <div class="nearby-card my-2 flex align-items-center">
+           <div class="image rounded-md">
+               <img src="./images/Nakuru.jpg" alt="">
+           </div>
+           <div class="text p-3">
+               <p><span class="font-weight-bold">
+                   Nakuru
+               </span></p>
+               <p class="text-muted">3 hour drive</p>
+           </div>
+        </div>
+        <div class="nearby-card my-2 flex align-items-center">
+           <div class="image rounded-md">
+               <img src="./images/Kisumu.jpg" alt="">
+           </div>
+           <div class="text p-3">
+               <p><span class="font-weight-bold">
+                   Kisumu
+               </span></p>
+               <p class="text-muted">5.5 hour drive</p>
+           </div>
+        </div>
+         <div class="nearby-card my-2 flex align-items-center">
+           <div class="image rounded-md">
+               <img src="./images/Malindi.jpg" alt="">
+           </div>
+           <div class="text p-3">
+               <p><span class="font-weight-bold">
+                   Malindi
+               </span></p>
+               <p class="text-muted">8.5 hour drive</p>
+           </div>
+        </div>
+        <div class="nearby-card my-2 flex align-items-center">
+           <div class="image rounded-md">
+               <img src="./images/Mtwapa.jpg" alt="">
+           </div>
+           <div class="text p-3">
+               <p><span class="font-weight-bold">
+                   Mtwapa
+               </span></p>
+               <p class="text-muted">7 hour drive</p>
+           </div>
+        </div>
+    </div>
+    <div class="flex nearby-cards">
+        
+    </div>
+     <h1 class="my-4">Live anywhere</h1>
+     <div class="flex anywhere">
+      <div class="item m-2">
+          <img src="./images/outdoor.jpg" alt="outdoor getaways" class="rounded-md">
+          <div class="text my-2">
+              <h3>Outdoor getaways</h3>
+          </div>
+      </div>
+       <div class="item m-2">
+          <img src="./images/pets.jpg" alt="outdoor getaways" class="rounded-md">
+          <div class="text my-2">
+              <h3>Pets allowed</h3>
+          </div>
+      </div>
+       <div class="item m-2">
+          <img src="./images/unique.jpg" alt="outdoor getaways" class="rounded-md">
+          <div class="text my-2">
+              <h3>Unique stays</h3>
+          </div>
+      </div>
+      <div class="item m-2">
+          <img src="./images/entire.jpg" alt="entire homes" class="rounded-md">
+          <div class="text my-2">
+              <h3>Entire Homes</h3>
+          </div>
+      </div>
+     </div>
+     
+<div class="host-wrapper my-5 rounded-lg">
+ <div class="text w-full d-none md-block p-5 text-white">
+   <h1>Try hosting</h1>
+   <h4 class="my-2">Earn extra income and new oportunities by sharing your space</h4>
+   <button class="btn bg-white my-3 py-3 px-4 font-weight-bold rounded-lg text-black">Learn more</button>
+  </div>
+     <div class="host flex">
+  <img src="./images/host.jpg" alt="">
+  <div class="text md-none text-white p-5">
+   <h1>Try hosting</h1>
+   <h4 class="my-2">Earn extra income and new oportunities by sharing your space</h4>
+   <button class="btn bg-white my-3 py-3 px-4 font-weight-bold rounded-lg text-black">Learn more</button>
+  </div></div>
+     </div>
+</div>
+<div class="discover container my-2">
+    <div class="container p-3">
+       <h1>Discover things to do</h1>
+       <div class="flex my-4 discover-cards">
+           <div class="item m-2">
+               <img src="./images/experiences.jpg" class="rounded-md" alt="">
+               <div class="my-3">
+                   <h3>Experiences</h3>
+                   <p class="text-muted">Find unforgettable activities near you.</p>
+               </div>
+           </div>
+            <div class="item m-2">
+               <img src="./images/online.jpg" class="rounded-md" alt="">
+               <div class="my-3">
+                   <h3>Online Experiences</h3>
+                   <p class="text-muted">Live, interactive activities led by Hosts..</p>
+               </div>
+           </div>
+           <div class="item m-2">
+               <img src="./images/wanderlust.jpg" class="rounded-md" alt="">
+               <div class="my-3">
+                   <h3>Featured collection: Wanderlust</h3>
+                   <p class="text-muted">Travel from home with Online Experiences.</p>
+               </div>
+           </div>
+       </div>
+    </div>
+</div>
+<div class="container">
+    <div class="container inspiration">
+        <h3>Inspiration for future getaways</h3>
+        <div class="my-3">
+        </div>
+    </div>
+</div>
+<footer class="container-fluid p-2 text-center text-light footer">
+ <small>Airbnb landing page clone by <a href="https://github.com/TomBrian">Brian Kanai</a> </small>
+</footer>
+<script>
+    var prevScrollpos = window.pageYOffset;
+
+window.onscroll=()=>{
+    var currentScrollPos = window.pageYOffset;
+ if (currentScrollPos > 50) {
+    document.querySelector(".fix-on-scroll-nav").style.display = "flex";
+    document.querySelector(".header .search").style.transform = "scale(0)"
+     document.querySelector(".header .search").style.tranform = "translateY(-100%)"
+    setTimeout(()=>{
+   document.querySelector(".navbar-light .nav-search").style.transform = "scale(1)";
+    },100)
+  } 
+  else{
+        document.querySelector(".header .search").style.transform = "scale(1)"
+        document.querySelector(".header .search").style.tranform = "translateY(0%)"
+       document.querySelector(".navbar-light .nav-search").style.transform = "scale(1.3)";
+       document.querySelector(".fix-on-scroll-nav").style.display = "none";
+  }
+
+}
+ </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
