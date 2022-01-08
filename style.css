@@ -166,7 +166,7 @@ nav .top-right-section button.light img.menu {
   width: 100%;
   height: 550px;
   background-color: #9e8f8f;
-  background-image: url("./images/airbnb-header.jpg");
+  background-image: url("./images/airbnb.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -234,13 +234,6 @@ nav .top-right-section button.light img.menu {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.header .hero-text .overlay {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: rgba(0, 0, 0, 0.438);
 }
 
 .header .hero-text h3 {

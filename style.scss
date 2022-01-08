@@ -124,7 +124,7 @@ body{
     width: 100%;
     height: 550px;
     background-color:rgb(158, 143, 143);
-    background-image: url('./images/airbnb-header.jpg');
+    background-image: url('./images/airbnb.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     .navbar-transparent{
@@ -166,10 +166,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    .overlay{
-        width: fit-content;
-        background-color: rgba(0, 0, 0, 0.438);
-    }
+   
     h3{
         color: white;
         font-size:24px;
